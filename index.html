@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sippable | Premium Automated Coffee Solutions</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        coffee: {
+                            900: '#3B2F2F', /* Deep Espresso */
+                            800: '#4E3D3D',
+                            100: '#F5F5DC', /* Latte/Cream */
+                        },
+                        gold: {
+                            500: '#C5A059', /* Muted Gold */
+                            600: '#B08D4C',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Lora', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Custom tweaks */
+        .hero-bg {
+            background-image: linear-gradient(rgba(59, 47, 47, 0.8), rgba(59, 47, 47, 0.7)), url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .machine-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50 antialiased">
+
+    <nav class="bg-coffee-900 text-white fixed w-full z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i class="fa-solid fa-mug-hot text-gold-500 text-2xl"></i>
+                    <span class="font-serif text-2xl font-semibold tracking-wide">Sippable</span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#benefits" class="hover:text-gold-500 transition">Why Us</a>
+                    <a href="#machines" class="hover:text-gold-500 transition">Machines</a>
+                    <a href="#menu" class="hover:text-gold-500 transition">Menu</a>
+                    <a href="#contact" class="bg-gold-500 hover:bg-gold-600 text-white px-5 py-2 rounded-md font-medium transition shadow-md">
+                        Leasing Inquiry
+                    </a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="text-gray-300 hover:text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-coffee-800">
+            <a href="#benefits" class="block py-2 px-4 text-sm hover:bg-coffee-900">Why Us</a>
+            <a href="#machines" class="block py-2 px-4 text-sm hover:bg-coffee-900">Machines</a>
+            <a href="#menu" class="block py-2 px-4 text-sm hover:bg-coffee-900">Menu</a>
+            <a href="#contact" class="block py-2 px-4 text-sm text-gold-500 font-bold hover:bg-coffee-900">Leasing Inquiry</a>
+        </div>
+    </nav>
+
+    <section class="hero-bg h-screen flex items-center justify-center text-center px-4 pt-20">
+        <div class="max-w-4xl mx-auto text-white">
+            <p class="text-gold-500 font-bold tracking-widest uppercase mb-4 animate-pulse">Automated Coffee Amenity Solutions</p>
+            <h1 class="font-serif text-5xl md:text-7xl font-semibold mb-6 leading-tight">
+                Premium Coffee.<br>Zero Effort.
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-200 mb-10 font-light">
+                100% Turnkey coffee bars for offices, transit hubs, and commercial properties. We lease the footprint; you get the amenity.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#contact" class="bg-gold-500 hover:bg-gold-600 text-white text-lg px-8 py-4 rounded shadow-lg transition transform hover:scale-105">
+                    Qualify Your Location
+                </a>
+                <a href="#machines" class="bg-transparent border-2 border-white hover:bg-white hover:text-coffee-900 text-white text-lg px-8 py-4 rounded shadow-lg transition">
+                    View Machines
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-coffee-100 py-8 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <i class="fa-solid fa-clock text-coffee-900 text-2xl mb-2"></i>
+                <p class="font-bold text-coffee-900">24/7 Availability</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-wallet text-coffee-900 text-2xl mb-2"></i>
+                <p class="font-bold text-coffee-900">Zero Capital Cost</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-wifi text-coffee-900 text-2xl mb-2"></i>
+                <p class="font-bold text-coffee-900">Smart Telemetry</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-leaf text-coffee-900 text-2xl mb-2"></i>
+                <p class="font-bold text-coffee-900">Sustainably Sourced</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="benefits" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl text-coffee-900 font-bold mb-4">The Sippable Proposal</h2>
+                <div class="h-1 w-24 bg-gold-500 mx-auto"></div>
+                <p class="mt-4 text-xl text-gray-600 max-w-2xl mx-auto">Why top property managers choose us over traditional cafes.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-coffee-100 text-coffee-900">
+                            <i class="fa-solid fa-screwdriver-wrench text-2xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-serif font-semibold text-coffee-900 mb-2">100% Turnkey Operations</h3>
+                        <p class="text-gray-600 leading-relaxed">We handle installation, daily restocking, deep cleaning, and maintenance. You don't lift a finger. We simply require power and a footprint.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-coffee-100 text-coffee-900">
+                            <i class="fa-solid fa-coins text-2xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-serif font-semibold text-coffee-900 mb-2">Zero Capital Expenditure</h3>
+                        <p class="text-gray-600 leading-relaxed">Why buy depreciating assets? We lease the footprint from you. You gain a premium building amenity without touching your budget.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-coffee-100 text-coffee-900">
+                            <i class="fa-solid fa-bolt text-2xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-serif font-semibold text-coffee-900 mb-2">Energy & Productivity</h3>
+                        <p class="text-gray-600 leading-relaxed">Essential for early morning or mid-afternoon boosts. Keep workers and tenants happy without them leaving the building or standing in long lines.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-coffee-100 text-coffee-900">
+                            <i class="fa-solid fa-mug-saucer text-2xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-serif font-semibold text-coffee-900 mb-2">Barista Quality</h3>
+                        <p class="text-gray-600 leading-relaxed">Bean-to-cup technology offering over 30 combinations of Coffee, Hot Chocolate, Tea, Cappuccino & Espresso. Better than the breakroom pot.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="machines" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl text-coffee-900 font-bold mb-4">State-of-the-Art Technology</h2>
+                <p class="mt-4 text-xl text-gray-600">We deploy the world's most reliable and engaging brewing systems.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="machine-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 transition duration-300">
+                    <div class="h-64 bg-gray-200 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1565453006698-a17d83dd9b1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Evoke Machine" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-gold-500 text-white text-xs font-bold px-2 py-1 rounded">MOST POPULAR</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-2xl font-bold text-coffee-900 mb-2">The Evoke Series</h3>
+                        <p class="text-gray-600 mb-4 text-sm">A masterpiece of interaction. Full HD touch screen interface offering a fully immersive ordering experience perfect for Class A office lobbies.</p>
+                        <ul class="text-sm text-gray-500 space-y-1 mb-4">
+                            <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Touch Screen Interface</li>
+                            <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Bean-to-Cup Grinding</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="machine-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 transition duration-300">
+                    <div class="h-64 bg-gray-200 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1649237936776-586b5105315f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Lavazza Machine" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-2xl font-bold text-coffee-900 mb-2">Lavazza Professional</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Italian excellence in every cup. Ideal for high-traffic areas requiring speed without compromising the espresso crema quality.</p>
+                        <ul class="text-sm text-gray-500 space-y-1 mb-4">
+                            <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Authentic Italian Espresso</li>
+                            <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>High Volume Output</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="machine-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 transition duration-300">
+                    <div class="h-64 bg-gray-200 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1521494793744-88771960205b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Nescafé Machine" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-2xl font-bold text-coffee-900 mb-2">Coffee+ Station</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Versatility meets reliability. This station offers the widest variety of beverages including specialty teas and hot chocolates.</p>
+                        <ul class="text-sm text-gray-500 space-y-1 mb-4">
+                            <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>30+ Beverage Options</li>
+                            <li><i class="fa-solid fa-check text-gold-500 mr-2"></i>Cashless & Mobile Pay</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="py-20 bg-coffee-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="font-serif text-3xl mb-8">More Than Just Black Coffee</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="border border-gold-500 text-gold-500 px-4 py-2 rounded-full text-sm uppercase tracking-wide">Fresh Roast</span>
+                <span class="border border-gold-500 text-gold-500 px-4 py-2 rounded-full text-sm uppercase tracking-wide">Espresso</span>
+                <span class="border border-gold-500 text-gold-500 px-4 py-2 rounded-full text-sm uppercase tracking-wide">Cappuccino</span>
+                <span class="border border-gold-500 text-gold-500 px-4 py-2 rounded-full text-sm uppercase tracking-wide">Latte Macchiato</span>
+                <span class="border border-gold-500 text-gold-500 px-4 py-2 rounded-full text-sm uppercase tracking-wide">French Vanilla</span>
+                <span class="border border-gold-500 text-gold-500 px-4 py-2 rounded-full text-sm uppercase tracking-wide">Rich Hot Chocolate</span>
+                <span class="border border-gold-500 text-gold-500 px-4 py-2 rounded-full text-sm uppercase tracking-wide">Chai Latte</span>
+                <span class="border border-gold-500 text-gold-500 px-4 py-2 rounded-full text-sm uppercase tracking-wide">Premium Tea</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="font-serif text-3xl text-coffee-900 font-bold mb-12 text-center">Perfect for Every Environment</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="text-center p-4 hover:bg-coffee-100 rounded transition">
+                    <i class="fa-solid fa-building text-4xl text-coffee-800 mb-4"></i>
+                    <h4 class="font-bold">Offices</h4>
+                </div>
+                <div class="text-center p-4 hover:bg-coffee-100 rounded transition">
+                    <i class="fa-solid fa-train text-4xl text-coffee-800 mb-4"></i>
+                    <h4 class="font-bold">Transit Hubs</h4>
+                </div>
+                <div class="text-center p-4 hover:bg-coffee-100 rounded transition">
+                    <i class="fa-solid fa-bag-shopping text-4xl text-coffee-800 mb-4"></i>
+                    <h4 class="font-bold">Malls & Retail</h4>
+                </div>
+                <div class="text-center p-4 hover:bg-coffee-100 rounded transition">
+                    <i class="fa-solid fa-graduation-cap text-4xl text-coffee-800 mb-4"></i>
+                    <h4 class="font-bold">Campuses</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-coffee-100">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                <div class="bg-coffee-900 py-6 px-8">
+                    <h2 class="text-2xl font-serif text-white font-bold">Elevate Your Property Today</h2>
+                    <p class="text-gray-300 text-sm mt-1">Inquire to see if your location qualifies for a free installation.</p>
+                </div>
+                <div class="p-8">
+                    <form onsubmit="event.preventDefault(); alert('Thank you for your request. A Sippable representative will contact you within 24 hours with a site proposal.');">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Full Name</label>
+                                <input class="w-full px-3 py-3 border border-gray-300 rounded focus:outline-none focus:border-gold-500" id="name" type="text" placeholder="Jane Doe" required>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="company">Company / Property</label>
+                                <input class="w-full px-3 py-3 border border-gray-300 rounded focus:outline-none focus:border-gold-500" id="company" type="text" placeholder="Acme Property Mgmt" required>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Work Email</label>
+                                <input class="w-full px-3 py-3 border border-gray-300 rounded focus:outline-none focus:border-gold-500" id="email" type="email" placeholder="jane@example.com" required>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="traffic">Est. Daily Foot Traffic</label>
+                                <select class="w-full px-3 py-3 border border-gray-300 rounded focus:outline-none focus:border-gold-500" id="traffic">
+                                    <option>Less than 50</option>
+                                    <option>50 - 200</option>
+                                    <option>200 - 500</option>
+                                    <option>500+</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="mb-8">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Additional Details (Optional)</label>
+                            <textarea class="w-full px-3 py-3 border border-gray-300 rounded focus:outline-none focus:border-gold-500" id="message" rows="3" placeholder="Tell us about your space (Lobby, Breakroom, etc)"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-gold-500 hover:bg-gold-600 text-white font-bold py-4 rounded shadow-lg transition duration-200 uppercase tracking-widest">
+                            Request Site Proposal
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-coffee-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="col-span-1 md:col-span-2">
+                <div class="flex items-center gap-2 mb-4">
+                    <i class="fa-solid fa-mug-hot text-gold-500 text-xl"></i>
+                    <span class="font-serif text-white text-xl font-semibold">Sippable</span>
+                </div>
+                <p class="text-sm leading-relaxed max-w-xs">
+                    Sippable is the premier provider of automated coffee solutions. We bridge the gap between expensive cafes and outdated vending machines.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold uppercase tracking-wide mb-4 text-sm">Solutions</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-gold-500">Office Coffee</a></li>
+                    <li><a href="#" class="hover:text-gold-500">Transit Vending</a></li>
+                    <li><a href="#" class="hover:text-gold-500">Hospitality</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold uppercase tracking-wide mb-4 text-sm">Contact</h4>
+                <ul class="space-y-2 text-sm">
+                    <li>partnerships@sippable.com</li>
+                    <li>1-800-SIP-AUTO</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 mt-12 pt-8 border-t border-gray-800 text-center text-xs">
+            &copy; 2025 Sippable Automated Retail. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
