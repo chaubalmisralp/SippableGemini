@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2500 512">
+
+<br><br><br><br><br><br><br>
+
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        coffee: {
+                            900: '#3B2F2F', /* Deep Espresso */
+                            800: '#4E3D3D',
+                            100: '#F5F5DC', /* Latte/Cream */
+                        },
+                        gold: {
+                            500: '#C5A059', /* Muted Gold */
+                            600: '#B08D4C',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Lora', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+<div class="bg-coffee-900 flex items-center justify-center gap-10">
+  <i class="fa-solid fa-mug-hot text-gold-500 text-[100px]"></i>
+  <span class="font-serif text-white text-[100px] font-semibold">Sippable</span>
+</div>
+
+</svg>        
